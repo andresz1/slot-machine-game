@@ -1,0 +1,31 @@
+{
+  "name": "slot-machine-game",
+  "version": "0.1.0",
+  "description": "A simple slot machine game made with HTML5 and JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andresz1/slot-machine-game.git"
+  },
+  "author": "Andres Alvarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andresz1/slot-machine-game/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-processhtml": "^0.3.8",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-htmlmin": "^0.6.0",
+    "grunt-contrib-compress": "^0.14.0"
+  }
+}
