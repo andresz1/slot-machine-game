@@ -1,0 +1,26 @@
+<resources>
+    <resource>
+        <name>SYM1</name>
+        <url>assets/images/SYM1.png</url>
+    </resource>
+    <resource>
+        <name>SYM3</name>
+        <url>assets/images/SYM3.png</url>
+    </resource>
+    <resource>
+        <name>SYM4</name>
+        <url>assets/images/SYM4.png</url>
+    </resource>
+    <resource>
+        <name>SYM5</name>
+        <url>assets/images/SYM5.png</url>
+    </resource>
+    <resource>
+        <name>SYM6</name>
+        <url>assets/images/SYM6.png</url>
+    </resource>
+    <resource>
+        <name>SYM7</name>
+        <url>assets/images/SYM7.png</url>
+    </resource>
+</resources>
