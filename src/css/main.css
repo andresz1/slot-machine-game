@@ -1,10 +1,54 @@
+body {
+  font-family: 'Bangers', cursive;
+  background-image: url(../assets/images/background.jpg);
+}
+#wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow:hidden;
+}
 #canvas {
-    padding: 0;
-    margin: auto;
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#resources {
+  position: absolute;
+  width: 28%;
+  height: 10%;
+  top: 50%;
+  left: 60%;
+  z-index: 2;
+  display: none;
+}
+select {
+  font-family: inherit;
+  border-radius: 15px;
+  border: 3px solid #000;
+  padding-left: 1.5%;
+  font-size: 2.6em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(http://www.millionairegraduates.com/images/dropdown-arrow.png) 92% / 12% no-repeat,
+    linear-gradient(to bottom, rgba(196,196,196,1) 0%, rgba(189,189,189,1) 41%, rgba(181,181,181,1) 45%, rgba(79,79,79,1) 99%, rgba(219,219,219,1) 100%);;
+}
+@media only screen and (max-width: 420px) {
+  select {
+    font-size: 0.8em;
+    border: 1px solid #000;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 867px) {
+  select {
+    font-size: 1.2em;
+    border: 1px solid #000;
+  }
+}
+@media only screen and (min-width: 868px) and (max-width: 1224px) {
+  select {
+    border: 2px solid #000;
+    font-size: 1.8em;
+  }
 }

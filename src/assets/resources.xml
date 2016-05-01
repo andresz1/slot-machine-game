@@ -1,26 +1,26 @@
 <resources>
     <resource>
-        <name>SYM1</name>
-        <url>assets/images/SYM1.png</url>
+        <name>Wild</name>
+        <url>assets/images/wild.png</url>
     </resource>
     <resource>
-        <name>SYM3</name>
-        <url>assets/images/SYM3.png</url>
+        <name>Strawberry</name>
+        <url>assets/images/strawberry.png</url>
     </resource>
     <resource>
-        <name>SYM4</name>
-        <url>assets/images/SYM4.png</url>
+        <name>Pineapple</name>
+        <url>assets/images/pineapple.png</url>
     </resource>
     <resource>
-        <name>SYM5</name>
-        <url>assets/images/SYM5.png</url>
+        <name>Lemon</name>
+        <url>assets/images/lemon.png</url>
     </resource>
     <resource>
-        <name>SYM6</name>
-        <url>assets/images/SYM6.png</url>
+        <name>Watermelon</name>
+        <url>assets/images/watermelon.png</url>
     </resource>
     <resource>
-        <name>SYM7</name>
-        <url>assets/images/SYM7.png</url>
+        <name>Grapes</name>
+        <url>assets/images/grapes.png</url>
     </resource>
 </resources>
