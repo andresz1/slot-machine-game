@@ -4,6 +4,17 @@ window.onload = function() {
   var resources = document.getElementById('resources');
   var game;
 
+  window.requestAnimFrame = (function() {
+    return window.requestAnimationFrame ||
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      window.oRequestAnimationFrame ||
+      window.msRequestAnimationFrame ||
+      function(callback, element) {
+        return window.setTimeout(callback, 1000 / 60);
+      };
+  })();
+
   canvas.width = 1024;
   canvas.height = 680;
 

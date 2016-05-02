@@ -1,10 +1,11 @@
 module.exports = function(grunt) {
   var paths = {
-    assets: 'src/assets/**/*',
+    assets: {
+      cwd: 'src/',
+      src: 'assets/**'
+    },
     css: 'src/css/*.css',
-    js: [
-      'src/js/**/*.js'
-    ],
+    js: 'src/js/**/*.js',
     build: './build/'
   };
 
@@ -25,11 +26,10 @@ module.exports = function(grunt) {
     },
     copy: {
       assets: {
-        src: paths.assets,
-        dest: paths.build + 'assets/',
-        filter: 'isFile',
-        expand: true,
-        flatten: true
+        cwd: paths.assets.cwd,
+        src: paths.assets.src,
+        dest: paths.build,
+        expand: true
       }
     },
     uglify: {

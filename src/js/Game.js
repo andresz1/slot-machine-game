@@ -198,10 +198,10 @@
     ctx.drawImage(this._assets.background, 0, 0, 1024, 640, 0, 0, canvas.width, canvas.height);
     ctx.drawImage(this._assets.buttonDisable, 710, 470);
 
+    this._select.style.display = "inline"
+
     this._resources = new ResourceManager();
     this._resources.load(request.response, type, this._select, this._create.bind(this));
-
-    this._select.style.display = "inline"
   };
 
   /**

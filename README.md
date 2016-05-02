@@ -28,6 +28,15 @@ Compress your game in a zip file, ready for [CocoonJS](https://www.ludei.com/coc
 grunt zip
 ```
 
+## Usage
+
+After building the project. You can use a server like [http-server](https://github.com/indexzero/http-server) to mount it.
+
+```bash
+cd build/
+http-server
+```
+
 ### Feedback
 
 Pull requests, feature ideas and bug reports are welcome.
