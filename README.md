@@ -39,10 +39,29 @@ cd build/
 http-server
 ```
 
-### Feedback
+### Resource fetching
+
+You could use a [JSON](https://en.wikipedia.org/wiki/JSON) or a [XML](https://en.wikipedia.org/wiki/XML) file. Those files must follow the structure given in the `resources.json` and `resources.xml` correspondingly. To do so specify the path to the file when calling the `Game.init` method:
+
+```js
+game.init('assets/resources.json');
+// or
+game.init('assets/resources.xml');
+```
+
+### Game rules
+
+The `Game.maxIterations` controls the number of iterations to be done in the switch phase and the `Game.switchTime` controls the time in ms of a resource switch. Change the default values of those attributes like so:
+
+```js
+game.maxIterations = 9;
+game.switchTime = 500;
+```
+
+## Feedback
 
 Pull requests, feature ideas and bug reports are welcome.
 
-### License
+## License
 
 MIT.

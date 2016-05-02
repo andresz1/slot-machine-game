@@ -87,7 +87,7 @@
     this._loaded = false;
 
     /**
-     * A game rule, it controls the number iterations to be done in the switch phase.
+     * A game rule, it controls the number of iterations to be done in the switch phase.
      *
      * @property {Number} maxIterations
      */
