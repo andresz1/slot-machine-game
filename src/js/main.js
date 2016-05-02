@@ -10,7 +10,7 @@ window.onload = function() {
       window.mozRequestAnimationFrame ||
       window.oRequestAnimationFrame ||
       window.msRequestAnimationFrame ||
-      function(callback, element) {
+      function(callback) {
         return window.setTimeout(callback, 1000 / 60);
       };
   })();

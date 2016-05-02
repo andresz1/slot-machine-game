@@ -115,6 +115,7 @@
    * @param {Number} toSend
    */
   Game.prototype._onPreloadProgress = function(request, failed, loaded, toSend) {
+    var canvas = this._canvas;
     var ctx = this._ctx;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -131,17 +132,16 @@
   Game.prototype._onResize = function() {
     var wrapper = this._wrapper;
     var canvas = this._canvas;
-    var select = this._select;
     var canvasRatio = canvas.height / canvas.width;
     var windowRatio = window.innerHeight / window.innerWidth;
     var width;
     var height;
 
     if (windowRatio < canvasRatio) {
-      height = sheight = window.innerHeight;
+      height = window.innerHeight;
       width = height / canvasRatio;
     } else {
-      width = sheight = window.innerWidth;
+      width = window.innerWidth;
       height = width * canvasRatio;
     }
 
@@ -170,14 +170,14 @@
       this._playing = true;
       this._select.disabled = true;
 
-      this._assets.switch.currentTime = 0
+      this._assets.switch.currentTime = 0;
 
       this._assets.switch.play();
       this._assets.win.play();
       this._assets.lose.play();
 
-      this._assets.win.currentTime = 0
-      this._assets.lose.currentTime = 0
+      this._assets.win.currentTime = 0;
+      this._assets.lose.currentTime = 0;
 
       this._assets.win.pause();
       this._assets.lose.pause();
@@ -198,7 +198,7 @@
     ctx.drawImage(this._assets.background, 0, 0, 1024, 640, 0, 0, canvas.width, canvas.height);
     ctx.drawImage(this._assets.buttonDisable, 710, 470);
 
-    this._select.style.display = "inline"
+    this._select.style.display = 'inline';
 
     this._resources = new ResourceManager();
     this._resources.load(request.response, type, this._select, this._create.bind(this));

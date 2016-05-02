@@ -52,8 +52,8 @@
           image: requests.image(parsed[i])
         });
     } else {
-      parsed = new DOMParser().parseFromString(data, "text/xml");
-      nodes = parsed.getElementsByTagName("resources")[0].children;
+      parsed = new DOMParser().parseFromString(data, 'text/xml');
+      nodes = parsed.getElementsByTagName('resources')[0].children;
 
       for (i = 0; i < nodes.length; i++) {
         node = nodes[i];
@@ -66,9 +66,9 @@
     }
 
     for (i = 0; i < this._values.length; i++) {
-      option = document.createElement("option");
+      option = document.createElement('option');
       option.text = this._values[i].name;
-      select.add(option, select[i])
+      select.add(option, select[i]);
     }
 
     requests.send(onComplete, onProgress);
